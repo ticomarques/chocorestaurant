@@ -5,10 +5,12 @@ import SEO from "../components/seo"
 import {HomeHeader, Banner, BannerButton} from '../utils'
 import img from '../images/bcg/homeBcg.jpeg'
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
+import Gallery from '../components/HomePageComponents/Gallery'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    
     <HomeHeader img={img}>
       <Banner title="Eatery" subtitle="55 main street - Santa Monica, CA">
         <BannerButton style={{ margin: '2rem auto' }}>
@@ -16,9 +18,10 @@ const IndexPage = () => (
         </BannerButton>
       </Banner>
     </HomeHeader>
-    <QuickInfo>
-      
-    </QuickInfo>
+    
+    <QuickInfo/> 
+
+    <Gallery />
   </Layout>
 )
 
