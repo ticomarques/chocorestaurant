@@ -1,7 +1,7 @@
 import React from 'react'
 import Product from './Product'
 import {StaticQuery, graphql} from 'gatsby'
-import {Section, Title, SectionBanner} from '../../utils'
+import {Section, Title, SectionButton} from '../../utils'
 import styled from 'styled-components'
 import {Link} from 'gatsby'
 
@@ -41,6 +41,11 @@ const Menu = () => {
                 }}
             />
         </ProductList>
+        <Link to="/menu/" style={{ textDecoration: 'none' }}>
+            <SectionButton style={{ margin: '2rem auto' }}>
+                menu
+            </SectionButton>
+        </Link>
     </Section>
   )
 }
